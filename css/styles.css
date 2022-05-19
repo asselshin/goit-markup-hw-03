@@ -10,6 +10,23 @@
     --secondary-bgc-color: #2F303A;
     --third-bgc-color: #F5F4FA;
 }
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,ol{
+    padding-left: 0;
+}
+img{
+    display: block;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}   
 body{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
@@ -30,11 +47,36 @@ body{
     font-size: 26px;
     line-height: 1.19;  
     color: var(--logo-black-color);
+    margin-right: 93px;
+
+    outline: solid tomato ;
 }
 .logo-web{
     color: var(--accent-color);
 }
 /* ========HEADER======== */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    align-items: center;
+}
+.menu-item:not(:last-child),
+.contact-item:not(:last-child) {
+    margin-right:50px;
+}
+
 .menu-link,
 .contact-link{
     font-weight: 500;
