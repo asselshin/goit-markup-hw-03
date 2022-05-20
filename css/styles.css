@@ -49,12 +49,16 @@ body{
     color: var(--logo-black-color);
     margin-right: 93px;
 
-    outline: solid tomato ;
+    /* outline: solid tomato ; */
 }
 .logo-web{
     color: var(--accent-color);
 }
 /* ========HEADER======== */
+.page-header{
+    padding-top:24px;
+    padding-bottom: 25px;
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -101,6 +105,7 @@ body{
 }
 /* ========SECTION======= */
 .modal-btn {
+    min-width: 200px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -109,6 +114,14 @@ body{
     background-color: var(--accent-color);
     color: var(--white-color);
     cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+    /* margin-left: auto;
+    margin-right: auto;
+    text-align: center; */
+    
+    
 }
 .modal-btn:hover,
 .modal-btn:focus{
@@ -121,6 +134,13 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero{
+    padding-top: 201px;
+    padding-bottom: 200px;
 }
 .hero,
 .page-footer{
@@ -131,11 +151,32 @@ body{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }   
 .description{
     font-size: 14px;
     line-height: 1.71;
     color: var(--secondary-font);
+}
+.work-container{
+    padding-bottom: 91px;
+}
+.work-list-container{
+    display:flex;
+    justify-content:space-between;
+}
+.feature-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.feature-list-container{
+    display: flex;
+}
+.feature-container-item{
+    width: 270px;
+}
+.feature-container-item:not(:last-child){
+    margin-right: 30px;    
 }
 .feature-subtitle {
     color: transparent;
@@ -145,16 +186,27 @@ body{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .team,
 .portfolio-btn{
     background-color: var(--third-bgc-color);
 }
+.team-container{
+    padding-top: 97px;
+    padding-bottom: 94px;
+}
+.team-list-container{
+    display:flex;
+    justify-content: space-between;
+}
 .team-title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 10px;
 }
+
 /* ============FOOTER========= */
 .address-item{
     color: var(--adr-color);
