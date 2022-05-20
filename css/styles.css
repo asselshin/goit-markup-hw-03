@@ -268,11 +268,15 @@ body{
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-font);
+    margin-bottom: 4px;
+    padding-left: 24px
+    ;
 }
 .portfolio-description{
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-font);
+    padding-left: 24px;
 }
 .portfolio-btn-list{
     display:flex;
@@ -287,5 +291,14 @@ body{
 .portfolio-list{
     display:flex;
     flex-wrap: wrap;
-
+    margin-right: -30px;
+    margin-bottom: -30px;
+}
+.portfolio-list li{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc((100% - 90px)/3);
+}
+.portfolio-list img{
+    margin-bottom: 20px;
 }
