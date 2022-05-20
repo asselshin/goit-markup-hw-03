@@ -9,6 +9,8 @@
     --logo-black-color:#000000;
     --secondary-bgc-color: #2F303A;
     --third-bgc-color: #F5F4FA;
+    --border-header:#ECECEC;
+    --border-card: #EEEEEE;
 }
 h1,h2,h3,h4,h5,h6,p,ul,ol{
     margin-top: 0;
@@ -58,6 +60,7 @@ body{
 .page-header{
     padding-top:24px;
     padding-bottom: 25px;
+    border-bottom: 1px var(--border-header) solid;
 }
 .header-container {
     display: flex;
@@ -268,9 +271,9 @@ body{
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-font);
+    padding-top:20px;
     margin-bottom: 4px;
-    padding-left: 24px
-    ;
+    padding-left: 24px;
 }
 .portfolio-description{
     font-size: 16px;
@@ -299,6 +302,8 @@ body{
     margin-bottom: 30px;
     flex-basis: calc((100% - 90px)/3);
 }
-.portfolio-list img{
-    margin-bottom: 20px;
+.portfolio-item{
+    border-bottom: 1px solid var(--border-card);
+    border-right: 1px solid var(--border-card);
+    border-left: 1px solid var(--border-card);
 }
