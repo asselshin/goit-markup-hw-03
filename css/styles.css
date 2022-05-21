@@ -42,6 +42,19 @@ body{
     list-style: none;
     font-style: normal;
 }
+.visually-hidden{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+   
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
 /* ======LOGO=======*/
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -180,10 +193,7 @@ body{
 .feature-container-item:not(:last-child){
     margin-right: 30px;    
 }
-.feature-subtitle {
-    color: transparent;
-    display: none;
-}
+
 .feature-title{
     font-weight: 700;
     font-size: 14px;
@@ -242,10 +252,6 @@ body{
 .portfolio-container{
     padding-top: 94px;
     padding-bottom: 94px;
-}
-.portfolio-main-title{
-    display: none;
-    color:transparent;
 }
 .portfolio-btn{
     min-width: 73px;
